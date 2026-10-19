@@ -59,9 +59,9 @@ items.innerHTML = '';
 //Setup Categories
 for (i in uniqueItemCat) {
     if (i == 0) {
-        items.innerHTML += "<div align='center' class='items' id='" + uniqueItemCat[i] + `' style='font-weight: bold;' onclick='itemCatClose("` + i + `")'>` + uniqueItemCat[i] + " (<span id='" + uniqueItemCat[i] + "2'>0</span>)</div><br>"
+        items.innerHTML += "<div align='center' class='items' id='" + uniqueItemCat[i] + `' style='font-weight: bold;' onclick='itemCatClose("` + i + `")'>` + uniqueItemCat[i] + " (<span id='itemCat" + i + "'>0</span>)</div><br>"
     } else {
-        items.innerHTML += "<br><div align='center' class='items' id='" + uniqueItemCat[i] + `' style='font-weight: bold;' onclick='itemCatClose("` + i + `")'>` + uniqueItemCat[i] + " (<span id='" + uniqueItemCat[i] + "2'>0</span>)</div><br>";
+        items.innerHTML += "<br><div align='center' class='items' id='" + uniqueItemCat[i] + `' style='font-weight: bold;' onclick='itemCatClose("` + i + `")'>` + uniqueItemCat[i] + " (<span id='itemCat" + i + "'>0</span>)</div><br>";
     }
     //Add Items
     for (j in itemNames) {
